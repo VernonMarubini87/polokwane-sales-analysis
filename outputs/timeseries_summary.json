@@ -1,0 +1,9 @@
+{
+  "strongest_month_of_year": 12,
+  "weakest_month_of_year": 6,
+  "week_over_week_growth_volatility_std": 0.34431982309743775,
+  "seasonal_component_range": [
+    -73314.59895106222,
+    35023.94350525557
+  ]
+}

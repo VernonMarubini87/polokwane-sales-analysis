@@ -1,0 +1,90 @@
+debtor_code,debtor_name,recency,frequency,monetary,R,F,M,rfm_score,segment
+WHO10436,Polokwane Meat World (Pty) Ltd,2,134,662656.53,5,5,5,15,Champions
+WHO10266,Radima Enterprise(CASH),5,172,538523.81,5,5,5,15,Champions
+WHO10158,Duroc Foods,769,127,460041.17,1,5,5,11,Loyal
+WHO11000,United Food Company (Pty) Ltd(CASH),1,221,374041.87,5,5,5,15,Champions
+WHO10190,Firefly Foods,8,102,291044.58,5,5,5,15,Champions
+WHO10573,Pincode Restuarant and Catering (CASH),29,138,268609.21,4,5,5,14,Champions
+WHO10254,Glendas TakeFive Catering Pty Ltd(CASH),4,98,267885.83,5,5,5,15,Champions
+WHO11269,SSG Facilities (Pty) Ltd (CASH),15,12,212120.74,4,4,5,13,Champions
+WHO10246,Welgelegn Slaghuis T/A The SteakHouse(CASH),44,19,190771.80000000002,3,4,5,12,Loyal
+WHO10293,Vleis Lapa Marshall Street,23,22,188381.69,4,4,5,13,Champions
+WHO10955,CHANDLERS SUPERMARKET (PTY) LTD(CASH),1,122,178941.01,5,5,5,15,Champions
+WHO10291,Yourtrade 357 Pty Ltd(CASH),12,94,170659.01,4,5,5,14,Champions
+WHO10752,Limpopo Fresh Produce Market (Pty) Ltd,13,47,169081.34,4,5,5,14,Champions
+WHO11086,Limpopo Frozen Chicken & Meat Distributors,14,40,133299.81,4,5,5,14,Champions
+WHO11938,Lecian Maleka Lecian Travel cc(CASH),2,82,121225.75,5,5,5,15,Champions
+WHO10327,Mmazwi Civil P Construction(CASH),114,26,118948.16,3,4,5,12,Loyal
+WHO10205,BabyBeet (Pty) Ltd(CASH),501,93,115452.17,2,5,5,12,Loyal
+WHO10653,Limpopo Frozen Chicken & Meat  Distributors(CASH),383,42,100896.51000000001,2,5,5,12,Loyal
+WHO11406,LEITAO AND SON T/A PALAMINE,83,3,94390.84,3,2,4,9,Developing
+WHO10782,Sekhukhune Lodge(CASH),91,16,86930.62,3,4,4,11,Loyal
+WHO10324,Sir Paul Guest House(CASH),366,20,78017.35,2,4,4,10,Loyal
+WHO11523,Kgabo Abo Maleka Trading Enterprise (CASH),57,1,49474.64,3,2,4,9,Developing
+WHO10921,Mosima Mthumbeni(CASH),1,52,49121.13,5,5,4,14,Champions
+WHO10649,Kalkheuvel Boerdery Pty Ltd(CASH),2,6,43357.96,5,3,4,12,Loyal
+WHO11286,Lebedi Business Development (CASH),1,43,43135.1,5,5,4,14,Champions
+WHO10622,LJS  Bakers Garage (Pty) Ltd(CASH),23,14,39841.81,4,4,4,12,Loyal
+WHO10328,Onicca Butchery(CASH),516,18,36485.34,2,4,4,10,Loyal
+WHO11172,Kameeldoring Boarding and Catering (Pty) Ltd(CASH),1,8,35782.33,5,3,4,12,Loyal
+WHO10690,Tsielo Investments (CASH),705,1,33874.34,1,1,4,6,At Risk (high value)
+WHO11260,Dikwenanyana tsa Matlala (Pty) Ltd(CASH),5,39,31751.61,5,5,4,14,Champions
+HTR80254,Cloetes Cold Meats CC,415,5,31685.97,2,3,4,9,At Risk (high value)
+WHO10366,TK Sisonke(CASH),1091,1,28173.42,1,1,4,6,At Risk (high value)
+WHO10386,MORONGWA JNT (PTY) LTD,1041,3,27101.89,1,2,4,7,At Risk (high value)
+WHO11077,Moopong B Enterprises(CASH),5,13,25400.52,5,4,4,13,Champions
+WHO10636,Sirkel-n-Landgoed (Pty0 Ltd (CASH),260,6,22567.22,2,3,4,9,At Risk (high value)
+WHO11184,Blessert Trading Enterprise (CASH),18,23,22555.37,4,4,4,12,Loyal
+WHO11265,Purple Heaven Eating House (CASH),12,29,21789.85,4,5,3,12,Loyal
+WHO11337,Kumo's Diesel Motors(CASH),19,11,21341.57,4,4,3,11,Loyal
+WHO10751,R & G Meat Supplier (Pty) Ltd(CASH),77,2,20380.61,3,2,3,8,Developing
+WHO10874,Gladson Sibongiseni Nxumalo(CASH),21,11,20087.84,4,4,3,11,Loyal
+WHO10609,Morongwa Restaurant(CASH),12,14,19558.63,4,4,3,11,Loyal
+WHO10621,Kherols Enterprise(CASH),161,9,19548.27,3,3,3,9,Developing
+WHO11932,Manganeng Supermarket (Pty) Ltd(CASH),26,10,19544.96,4,4,3,11,Loyal
+WHO10493,Gamashifane Enterprises(CASH),790,3,18329.18,1,2,3,6,Churned/Lapsed
+WHO11388,Tshepo Molokwane (CASH),2,20,14473.75,5,4,3,12,Loyal
+WHO10694,Sue Bezeidenhout(CASH),455,9,13558.46,2,4,3,9,Churned/Lapsed
+WHO11144,Ragio Bakery (Pty) Ltd (CASH),27,15,13316.710000000001,4,4,3,11,Loyal
+HGL30018,National Sales - Samples,453,8,11322.94,2,3,3,8,Churned/Lapsed
+HCH20109,Cloete Cold Meat (COD),1107,1,11087.43,1,1,3,5,Churned/Lapsed
+WHO10043,Gawulos(CASH),125,6,10910.93,3,3,3,9,Developing
+WHO11602,Molepa Trading Enterprise (CASH),2,3,10766.99,5,3,3,11,Loyal
+WHO10936,VTJ Hire and Entertainment (PtY) lTD(CASH),475,2,10321.3,2,2,3,7,Churned/Lapsed
+WHO11469,Dikwena Fuels (CASH),23,5,10290.08,4,3,3,10,Loyal
+WHO11197,Sibana Projects (CASH),198,1,8369.76,3,2,2,7,Developing
+FRA6000,Plus 27 Meats Africa (Pty) Ltd - Eskort Tho,854,1,8120.879999999999,1,1,2,4,Churned/Lapsed
+WHO11171,Musa Kekona(CASH),231,5,7127.09,2,3,2,7,Churned/Lapsed
+WHO10919,Maphondho Trading and Projects(CASH),384,3,6546.41,2,2,2,6,Churned/Lapsed
+WHO11017,Lesedi Nawanaka Trading Enterprise (CASH),57,7,6345.47,3,3,2,8,Developing
+WHO11473,The Meat Barn (CASH),18,5,6312.22,4,3,2,9,Developing
+WHO11248,Selaelo Mahlo(CASH),7,20,6042.05,5,4,2,11,Loyal
+HGL30096,Linette van der Walt- Walt Landgoed,15,2,5886.66,4,2,2,8,Developing
+WHO10633,Ok Mini Mark Boyne (CASH),653,2,5830.28,1,2,2,5,Churned/Lapsed
+HGL30087,Johan van der Walt - Walt Landgoed,135,2,4943.85,3,2,2,7,Developing
+WHO10186,Taste My Words(CASH),103,4,4571.0,3,3,2,8,Developing
+WHO10334,T AND H Tarven(CASH),805,4,4294.92,1,3,2,6,Churned/Lapsed
+WHO10100,Korkie Enterprise Pty Ltd t/a The Local Deli(CASH),1150,1,4123.49,1,1,2,4,Churned/Lapsed
+FRA10001,Plus 27 Meats (Pty) Ltd - Eskort Protea Glen,769,1,3651.83,1,1,2,4,Churned/Lapsed
+HGL30100,Marlene van der Walt - Walt Landgoed,85,1,3596.0299999999997,3,1,2,6,Developing
+WHO10909,Mare - Kop(CASH),419,2,3488.05,2,2,2,6,Churned/Lapsed
+WHO10564,Altis Biologics (Pty) Ltd t/a Machos Magwinya(CASH),632,3,2909.15,1,2,2,5,Churned/Lapsed
+WHO10964,MABRAP AIRCONDITIONING AND REFRIGERATION(CASH),457,1,2582.37,2,1,2,5,Churned/Lapsed
+WHO10335,Monapri( pty) ltd(CASH),1068,5,2495.96,1,3,1,5,Churned/Lapsed
+WHO10817,Benedict Matekula(CASH),420,1,2494.21,2,1,1,4,Churned/Lapsed
+WHO11438,Mochecha Ledwaba(CASH),41,6,2435.24,3,3,1,7,Developing
+WHO10153,Lekkevars(CASH),1093,1,2369.6,1,1,1,3,Churned/Lapsed
+WHO10477,Mohlaletse Guest House(CASH),1,2,2006.23,5,2,1,8,Developing
+WHO10793,DML Eagles Nest (CASH),589,1,1789.72,2,1,1,4,Churned/Lapsed
+WHO11586,Locco Grills (Pty) Ltd (CASH),6,2,1754.22,5,2,1,8,Developing
+WHO10255,Bobani General Trading CC(CASH),154,4,1691.92,3,3,1,7,Developing
+HGL30012,National Marketing - Samples,200,3,1658.7800000000002,3,2,1,6,Developing
+HGL30019,National Sales - Donations,795,2,1347.06,1,2,1,4,Churned/Lapsed
+WHO11538,Gas Resorts T/A Xclusive Spots Rest (CASH),18,3,1157.52,4,2,1,7,Developing
+HST50152,Prinsloo A (EST) -  70005,509,1,1128.54,2,1,1,4,Churned/Lapsed
+WHO11010,United Meat Express(CASH),34,1,839.69,3,1,1,5,Developing
+WHO10170,BP R81 Sebayeng Filling ST(CASH),1115,1,755.16,1,1,1,3,Churned/Lapsed
+HPS5000,National Sales Samples & Donations to Customers,531,1,728.19,2,1,1,4,Churned/Lapsed
+WHO10689,Mchwechwe (Pty) Ltd(CASH),642,1,497.4,1,1,1,3,Churned/Lapsed
+HGL30013,National Marketing - Donations,827,1,208.69,1,1,1,3,Churned/Lapsed
+HST50689,Karabo Mabididilala - 0211485,473,1,10.43,2,1,1,4,Churned/Lapsed

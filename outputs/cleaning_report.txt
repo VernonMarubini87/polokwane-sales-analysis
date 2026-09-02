@@ -1,0 +1,34 @@
+Raw parsed rows: 560,912
+Rows with unparseable date: 0
+Exact duplicate rows: 0
+
+Missing values per column:
+date                0
+doc_type            0
+doc_number          0
+debtor_code         0
+debtor_name         0
+product_code        0
+product_desc        0
+qty                 0
+mass_kg             0
+value_zar           0
+avg_price_per_kg    0
+
+doc_number range: 300331 - 30000052
+date range: 2023-07-01 - 2026-08-25
+
+Invoices: 560,840 rows | Credit Notes: 72 rows
+Credit Notes with non-negative qty & value (unexpected): 0
+Invoices with negative qty or value (returns mislabelled as invoices?): 372
+
+Rows with value_zar == 0: 24554
+Rows with qty == 0: 8431
+
+value_zar 0.1th pct: 0.00, 99th pct: 1739.80, max: 48068.64, min: -14258.27
+
+Distinct products: 1617
+Distinct debtors: 101
+Distinct doc_numbers: 8565 (rows: 560912) -- doc_number is not unique per row since one doc can have multiple product lines
+
+Rows where mass_kg==0 but avg_price_per_kg != 0: 0

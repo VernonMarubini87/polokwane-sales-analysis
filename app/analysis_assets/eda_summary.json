@@ -1,0 +1,16 @@
+{
+  "total_revenue": 98282583.78,
+  "total_transactions": 535920,
+  "avg_transaction_value": 183.3904011419615,
+  "median_transaction_value": 69.57,
+  "best_month": "2025-12",
+  "best_month_revenue": 3365136.3,
+  "worst_month": "2026-08",
+  "worst_month_revenue": 1931004.16,
+  "best_dow": "Friday",
+  "worst_dow": "Sunday",
+  "top_product": "Shoulder Ribs Smoked P/Kg",
+  "top_product_revenue": 5059321.67,
+  "top_customer": "Polokwane Cash Account - Butchery",
+  "top_customer_revenue": 87966777.69
+}

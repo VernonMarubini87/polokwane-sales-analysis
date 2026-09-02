@@ -1,0 +1,15 @@
+{
+  "best_params": {
+    "classifier__learning_rate": 0.1,
+    "classifier__max_depth": 8,
+    "classifier__n_estimators": 200
+  },
+  "best_cv_roc_auc": 0.9777212247213487,
+  "test_metrics": {
+    "accuracy": 0.929125,
+    "precision": 0.8536696205407862,
+    "recall": 0.7804320731200665,
+    "f1": 0.8154096581660336,
+    "roc_auc": 0.9771690402194405
+  }
+}

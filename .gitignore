@@ -1,0 +1,22 @@
+# Large raw/processed data files -- too big for git, see README for how to obtain/regenerate
+data/polokwane_sales.csv
+data/parsed_raw.csv
+data/polokwane_sales_clean.csv
+
+# Python
+__pycache__/
+*.pyc
+.ipynb_checkpoints/
+*.egg-info/
+
+# Environments
+.venv/
+venv/
+env/
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Streamlit
+.streamlit/secrets.toml

@@ -1,0 +1,14 @@
+{
+  "total_revenue_zar": 98282583.78,
+  "total_transactions": 535920,
+  "unique_invoices": 8513,
+  "avg_basket_value_zar": 11545.0,
+  "avg_line_item_value_zar": 183.39,
+  "return_rate_pct": 0.226,
+  "yoy_revenue_growth_2024_pct": 80.7,
+  "yoy_revenue_growth_2025_pct": 6.8,
+  "active_named_customers_avg_per_month": 17.5,
+  "class_A_products_pct_of_revenue": 79.9,
+  "unique_products_sold": 1616,
+  "unique_customer_accounts": 101
+}
