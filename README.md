@@ -1,7 +1,7 @@
 # Polokwane Sales Intelligence
 
 **End-to-end data science project** on 560,912 real POS transactions from
-Target Meats Pty Ltd (Eskort), Polokwane branch — July 2023 to August 2026.
+Polokwane branch — July 2023 to August 2026.
 
 Covers the full lifecycle: recovering a broken source export → cleaning →
 exploratory & business analysis → customer segmentation → product analysis →
@@ -12,7 +12,7 @@ as a Streamlit app.
 
 ## Highlights
 
-- Recovered a malformed Matrix Software POS report export (not valid CSV) into
+- Recovered a malformed POS report export (not valid CSV) into
   a clean 560,912-row transaction table.
 - Found that **89.5% of revenue runs through one pooled retail till account**
   — a key data-quality insight that reframes what "customer analysis" can
