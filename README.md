@@ -1,5 +1,10 @@
 # Polokwane Sales Intelligence
 
+> **⚠️ Confidential — Internal Use Only**
+> This project and the underlying data are prepared exclusively for the
+> Quantum Lean presentation and its stakeholders. Not for public
+> distribution or external sharing.
+
 **End-to-end data science project** on 560,912 real POS transactions from
 a regional meat wholesale & retail business (Polokwane branch) — July 2023 to August 2026.
 
@@ -137,4 +142,3 @@ matplotlib, Jupyter.
 ## Author
 
 Vernon Marubini — [github.com/VernonMarubini87](https://github.com/VernonMarubini87)
-Companion project: [retail_sales_analytics](https://github.com/VernonMarubini87/retail_sales_analytics)
