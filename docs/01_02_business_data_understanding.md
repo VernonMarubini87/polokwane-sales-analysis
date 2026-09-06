@@ -3,7 +3,7 @@
 ## Phase 1: Business Understanding
 
 **Business context**
-Retail Sales Analysis for Polokwane branch, is a butchery
+The business analysed here is a meat/butchery
 retail and wholesale operation. Sales are recorded through a Matrix Software
 POS system and exported as itemised transaction reports.
 
@@ -36,7 +36,7 @@ Management currently has raw transaction exports but no structured view of:
 
 **Constraints**
 - Single-branch, single-POS-system dataset — findings describe Polokwane
-  only.
+  only, not the wider company network.
 - No cost/margin data — analysis is revenue-based, not profitability-based.
 - Modelling was done in a resource-constrained sandbox (1 CPU core); noted
   wherever it affected methodology (see the ML pipeline README).

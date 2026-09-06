@@ -1,5 +1,5 @@
 # Polokwane Branch Sales — Final Business Report
-Target Meats Pty Ltd (Eskort) · Data: Jul 2023 – Aug 2026
+Polokwane Branch Sales · Data: Jul 2023 – Aug 2026
 
 ## 1. Executive Summary
 

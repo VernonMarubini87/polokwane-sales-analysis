@@ -1,6 +1,6 @@
 """
 Polokwane Sales — High-Value Transaction Predictor & Revenue Forecast
-Target Meats Pty Ltd (Eskort) — Polokwane branch
+Polokwane Branch — Meat Wholesale & Retail
 
 Run with:  streamlit run app.py
 (Requires: streamlit, pandas, numpy, scikit-learn, xgboost, prophet, joblib, matplotlib, plotly)
@@ -62,7 +62,7 @@ def load_artifacts():
  best_params, kpis, segments, top10_customers, abc_summary, abc_full, yearly) = load_artifacts()
 
 st.title("🥩 Polokwane Sales Intelligence")
-st.caption("Target Meats Pty Ltd (Eskort) — Polokwane branch")
+st.caption("Polokwane Branch — Meat Wholesale & Retail")
 
 tab0, tab1, tab2, tab3, tab4, tab5 = st.tabs([
     "🏠 Business Overview", "🔮 Predict Transaction Value", "📈 Revenue Forecast",
