@@ -7,11 +7,24 @@ Run with:  streamlit run app.py
 """
 
 import json
+import os
 import joblib
 import numpy as np
 import pandas as pd
 import streamlit as st
 import matplotlib.pyplot as plt
+
+# All file paths below are resolved relative to this script's own location,
+# not the process's current working directory -- Streamlit Community Cloud
+# always runs with cwd set to the repo root regardless of which file you
+# point it at, so a bare relative path like "model.joblib" only works when
+# you happen to `cd app` first (as you would running this locally).
+BASE_DIR = os.path.dirname(os.path.abspath(__file__))
+
+
+def p(*parts):
+    return os.path.join(BASE_DIR, *parts)
+
 
 st.set_page_config(page_title="Polokwane Sales Intelligence", layout="wide")
 
@@ -20,27 +33,27 @@ st.set_page_config(page_title="Polokwane Sales Intelligence", layout="wide")
 # ----------------------------------------------------------------------
 @st.cache_resource
 def load_artifacts():
-    model = joblib.load("best_model_xgboost_tuned.joblib")
-    prophet_model = joblib.load("prophet_model.joblib")
-    with open("app_reference_values.json") as f:
+    model = joblib.load(p("best_model_xgboost_tuned.joblib"))
+    prophet_model = joblib.load(p("prophet_model.joblib"))
+    with open(p("app_reference_values.json")) as f:
         ref = json.load(f)
-    with open("debtor_name_map.json") as f:
+    with open(p("debtor_name_map.json")) as f:
         debtor_map = json.load(f)
-    with open("product_desc_map.json") as f:
+    with open(p("product_desc_map.json")) as f:
         product_map = json.load(f)
-    daily_sales = pd.read_csv("daily_sales.csv", parse_dates=["ds"])
-    forecast = pd.read_csv("forecast_90d.csv", parse_dates=["ds"])
-    top10 = pd.read_csv("top10_feature_importance.csv")
-    comparison = pd.read_csv("model_comparison_test.csv", index_col=0)
-    with open("best_model_params.json") as f:
+    daily_sales = pd.read_csv(p("daily_sales.csv"), parse_dates=["ds"])
+    forecast = pd.read_csv(p("forecast_90d.csv"), parse_dates=["ds"])
+    top10 = pd.read_csv(p("top10_feature_importance.csv"))
+    comparison = pd.read_csv(p("model_comparison_test.csv"), index_col=0)
+    with open(p("best_model_params.json")) as f:
         best_params = json.load(f)
-    with open("analysis_assets/kpis.json") as f:
+    with open(p("analysis_assets", "kpis.json")) as f:
         kpis = json.load(f)
-    segments = pd.read_csv("analysis_assets/customer_segments_summary.csv")
-    top10_customers = pd.read_csv("analysis_assets/top10_named_customers.csv")
-    abc_summary = pd.read_csv("analysis_assets/product_abc_summary.csv")
-    abc_full = pd.read_csv("analysis_assets/product_abc_full.csv")
-    yearly = pd.read_csv("analysis_assets/yearly_summary.csv")
+    segments = pd.read_csv(p("analysis_assets", "customer_segments_summary.csv"))
+    top10_customers = pd.read_csv(p("analysis_assets", "top10_named_customers.csv"))
+    abc_summary = pd.read_csv(p("analysis_assets", "product_abc_summary.csv"))
+    abc_full = pd.read_csv(p("analysis_assets", "product_abc_full.csv"))
+    yearly = pd.read_csv(p("analysis_assets", "yearly_summary.csv"))
     return (model, prophet_model, ref, debtor_map, product_map, daily_sales, forecast, top10, comparison,
             best_params, kpis, segments, top10_customers, abc_summary, abc_full, yearly)
 
@@ -81,17 +94,17 @@ with tab0:
     )
 
     st.subheader("Revenue trend")
-    st.image("analysis_assets/monthly_revenue_trend.png", use_container_width=True)
+    st.image(p("analysis_assets", "monthly_revenue_trend.png"), use_container_width=True)
 
     col1, col2 = st.columns(2)
     with col1:
-        st.image("analysis_assets/revenue_by_dow.png", caption="Revenue by day of week", use_container_width=True)
+        st.image(p("analysis_assets", "revenue_by_dow.png"), caption="Revenue by day of week", use_container_width=True)
     with col2:
-        st.image("analysis_assets/seasonality_month_of_year.png", caption="Seasonality by month", use_container_width=True)
+        st.image(p("analysis_assets", "seasonality_month_of_year.png"), caption="Seasonality by month", use_container_width=True)
 
     st.subheader("Year-over-year comparison")
     st.dataframe(yearly, use_container_width=True)
-    st.image("analysis_assets/yoy_comparison.png", use_container_width=True)
+    st.image(p("analysis_assets", "yoy_comparison.png"), use_container_width=True)
 
 # ----------------------------------------------------------------------
 # TAB 1 — Prediction
@@ -183,13 +196,13 @@ with tab3:
 
     col1, col2 = st.columns(2)
     with col1:
-        st.image("confusion_matrix.png", caption="Confusion Matrix")
+        st.image(p("confusion_matrix.png"), caption="Confusion Matrix")
     with col2:
-        st.image("roc_curve.png", caption="ROC Curve")
+        st.image(p("roc_curve.png"), caption="ROC Curve")
 
     st.subheader("Top 10 feature importances")
     st.dataframe(top10, use_container_width=True, hide_index=True)
-    st.image("feature_importance.png", caption="Top 10 Feature Importances")
+    st.image(p("feature_importance.png"), caption="Top 10 Feature Importances")
 
 # ----------------------------------------------------------------------
 # TAB 4 — Customer analysis
@@ -204,11 +217,11 @@ with tab4:
         "(R5.7M of the R98.3M total)."
     )
 
-    st.image("analysis_assets/top15_customers.png", use_container_width=True)
+    st.image(p("analysis_assets", "top15_customers.png"), use_container_width=True)
 
     st.subheader("RFM segments (named trade accounts)")
     st.dataframe(segments, use_container_width=True)
-    st.image("analysis_assets/customer_segments.png", use_container_width=True)
+    st.image(p("analysis_assets", "customer_segments.png"), use_container_width=True)
 
     st.subheader("Top 10 named customers")
     st.dataframe(top10_customers, use_container_width=True, hide_index=True)
@@ -224,10 +237,10 @@ with tab5:
         f"drive **80% of revenue** (Class A). Class C — 72% of products — contributes only 5%."
     )
     st.dataframe(abc_summary, use_container_width=True)
-    st.image("analysis_assets/product_pareto.png", use_container_width=True)
+    st.image(p("analysis_assets", "product_pareto.png"), use_container_width=True)
 
     st.subheader("Top 15 products by revenue")
-    st.image("analysis_assets/top15_products.png", use_container_width=True)
+    st.image(p("analysis_assets", "top15_products.png"), use_container_width=True)
 
     st.subheader("Browse all products")
     class_filter = st.multiselect("ABC class", options=["A", "B", "C"], default=["A"])
